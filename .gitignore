@@ -1,0 +1,36 @@
+# Environment files (never commit secrets)
+.env
+.env.*
+!.env.example
+!infra/.env.example
+
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Build outputs
+dist/
+**/dist/
+coverage/
+*.tsbuildinfo
+
+# Generated artifacts kept locally
+apps/sidebar/vite.config.js
+apps/sidebar/vite.config.js.map
+packages/connectors/src/zendesk/adapter.js
+packages/connectors/src/zendesk/adapter.js.map
+
+# Tooling caches
+.vite/
+**/.vite/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# OS / editor files
+.DS_Store
+.idea/
+.vscode/
